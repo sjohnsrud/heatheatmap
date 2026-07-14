@@ -7,10 +7,10 @@ import { TemperatureDataPoint, temperatureToColor } from '../lib/temperatureUtil
 
 interface TemperatureMapProps {
   data: TemperatureDataPoint[]
-  selectedDate: Date
+  selectedDate?: Date
 }
 
-export default function TemperatureMap({ data, selectedDate }: TemperatureMapProps) {
+export default function TemperatureMap({ data }: TemperatureMapProps) {
   const mapContainer = useRef<HTMLDivElement>(null)
   const map = useRef<L.Map | null>(null)
   const markersRef = useRef<L.CircleMarker[]>([])
