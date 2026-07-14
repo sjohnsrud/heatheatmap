@@ -27,7 +27,7 @@ const NORWAY_CITIES = [
 const USER_AGENT = 'heatheatmap-app (https://github.com/sjohnsrud/heatheatmap)'
 
 export default async function handler(
-  req: NextApiRequest,
+  _req: NextApiRequest,
   res: NextApiResponse<ResponseData>
 ) {
   try {
